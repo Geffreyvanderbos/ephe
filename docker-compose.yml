@@ -1,0 +1,8 @@
+services:
+  ephe-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "50081:80"
+    restart: unless-stopped 
